@@ -1,0 +1,596 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/dropdown.css">
+<link rel="stylesheet" href="css/multiselect.css">
+<script type="text/javascript" src="js/jquery-1.8.0.js"></script>
+<script type="text/javascript" src="js/uncompressed.jquery.dd.js"></script>
+<script type="text/javascript" src="js/jquery.multiple.select.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<style>
+	/* :::::: Orientation Section Begins :::::::: */
+@media only screen and (max-width: 930px) {
+	#hdr-wrap {
+		position: absolute;
+		width: 992px;
+	}
+	#box-top {
+		position: absolute;
+		width: 943px;
+		top: 0px;
+	}
+
+
+}
+/* :::::: Orientation Section Ends :::::::: */
+</style>
+<script>
+var drop_down_selected = 0;
+</script>
+<script>
+    $(function() {
+        $('#ms').change(function() {
+            console.log($(this).val());
+        }).multipleSelect();
+    });
+</script>
+</head>
+
+<body>
+
+<div id="hdr-wrap">
+
+	<div id="hdr">
+	
+		<!-- Header top link Section Begins-->
+		
+		<div id="hdr-toplink">
+			<ul class="global-navigation">
+				<li class="logo fleft">
+				<a class="fleft margin-top-5" href="javascript:void(0);"></a>
+				</li>
+				<li class="fleft active">
+				<a class="fleft" href="page-2.html">JHA</a>
+				</li>
+				<!-- product drop down starts -->
+				<li class="product-dropdown-list fleft">
+				<div class="dropdown-wrapper">
+					<a href="javascript:void(0);" class="site_switcher_button ">More</a>
+					<ul class="product-dropdown ">
+						<li>
+						<a href="#">Incident Management System</a>
+						</li>
+						<li>
+						<a href="#">Training &amp; Assessment</a>
+						</li>
+						<li>
+						<a href="#">Administration</a>
+						</li>
+						<li>
+						<a href="#">Cartevia</a>
+						</li>
+						<li>
+						<a href="#">Job Hazard Assessment</a>
+						</li>
+						<li>
+						<a href="#">Cartevia</a>
+						</li>
+					</ul>
+				</div>
+				</li>
+				<!-- product drop down ends -->
+			</ul>
+			<div class="status fright bold">
+				<a class="display-inline dark-grey fleft" href="javascript:void(0);">Help </a>
+				<span class=" fleft">&nbsp; | &nbsp;</span>
+				<span class="fleft"> Welcome, Ben A Archibald</span>
+				<span> &nbsp; | &nbsp; </span>
+				<a href="javascript:void(0);"> LOG OUT </a>
+			</div>
+		</div>
+		
+		<!--Header top link Section Ends -->
+		
+		<!-- Header tab navigation Section Begins -->
+		
+		<div class="font-12" id="hdr-tab-navigation">
+			<ul class="top-navigation">
+				<li class=" active fleft">
+				<a class="fleft dark-text bold " href="page-2.html">Dashboard</a>
+				</li>
+				<li class=" fleft">
+				<a class="fleft dark-text bold" href="page-3.html">Jobs</a>
+				</li>
+				<li class="fleft">
+				<a class="fleft dark-text bold" href="javascript:void(0);">Reports</a>
+				</li>
+				<li class="fleft">
+				<a class="fleft dark-text bold" href="config-tool1.html">Setup</a>
+				</li>
+			</ul>
+			<div class="link-btn">
+				<a class="new" href="#">+ Add New</a>
+			</div>
+		</div>
+		
+		<!-- Header tab navigation Section Ends -->
+		
+	</div>
+	
+</div>
+
+<!-- content starts -->
+
+<div id="content-wrapper-fixed">
+
+	<div id="content-wrapper">
+	
+		<div id="box-top" class="fleft" style="height: 34px;width:898px;">
+
+					<span class="fleft heading-txt bold">Dashboard</span>
+					<div class="logo1 fright " style="max-height:30px;margin-top:3px;">
+						<img border="0" src="images/logo.png">
+					</div>
+
+				</div>
+	
+		<div id="content-section-full" style="width:938px">
+		
+		<div id="search">
+		
+			<div id="scrollable-contnt-full"  class="clearfix">
+			
+			
+				
+				<div class="pagination search-results-paginate search-results fleft" style="width:898px; top:146px;">
+				
+										
+					<span class="fleft margin-right-10 bold" style="margin-top:11px;">Due: </span>
+					<select class=" dd fleft" style="width:150px;">
+						<option >All</option>
+						<option>Overdue</option>
+						<option>Today</option>
+						<option>This Week</option>
+						<option>This Month</option>
+						<option>This Quarter</option>
+						<option>This Year</option>
+					</select>
+					
+					<div class="table_data_info" style="margin-top:11px;">3 items in 1 page(s).</div>
+					<div class="table_data_paginate fright font-14">
+						<div class="pagination-spans">
+							<a href="javascript:void(0)" class="rounded-corner-small prev disabled prev-page a-btn">Prev</a>
+							<a title="2" class="rounded-corner-small next next-page a-btn" href="javascript:void(0)">Next</a>
+						</div>
+					</div>
+					
+					<div style="" class="fright fbold margin-right-10">
+						<span  class="fleft bold margin-right-10" style="margin-top:11px;">Go To Page:&nbsp;</span>
+						
+								<select class=" dd fleft" style="width:70px;">
+									<option selected="selected" value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+							
+					</div>
+				</div>
+				
+				<div class="search-page-content fleft clearfix" style="margin-top:54px;width:100%;">
+					
+					
+						
+						<div class="search-page-content-body fleft" style="min-height:50px;width:100%;">
+
+							<!-- page-content-body section starts -->
+
+							<table width="100%" cellspacing="0" cellpadding="10" class="search-results-table">
+
+								<tbody>
+									<tr class="table-header">
+										<td class="bold first-coloumn" width="20%">
+											<a href="#" class="fleft">Priority</a>
+											<div class="cntntsort fleft">
+												<a class="asc-active" href="javascript:void(0);" id="employee"></a>
+											</div>
+										
+										</td>
+										<td class="bold" width="35%">
+											To-Do
+										
+										</td>
+										<td class="bold" width="16%">
+											<a href="#" class="fleft">Target</a>
+											<div class="cntntsort fleft">
+												<a class="desc-active" href="javascript:void(0);" id="employee"></a>
+											</div>
+										</td>
+										<td class="bold" width="9%">
+											
+											&nbsp;
+										</td>
+										<td class="bold last-column" width="20%">
+											Action
+										
+										</td>
+									
+									</tr>
+								
+									<tr>
+										<td class="first-coloumn">
+											<span>02</span><br/>
+											<span>Medium High Risk</span>
+										</td>
+										<td style=" vertical-align: middle;" >
+												<div style="position:relative;">
+												<span class="list-info">
+														<div class="list-info-wrapper" style="display:none;">
+															<span class="wrapper-arrow"></span>
+																<ul>
+																	<li class="padding-bottom-5">
+																	Phone: +55 4934 29349
+																	</li>
+																	<li class="padding-bottom-5">
+																	Schedule Date: 01-Jan-2014 08:00
+																	</li>
+																	<li class="padding-bottom-5">
+																	Target Date: 05-Jan-2014
+																	</li>
+																	<li class="padding-bottom-5">
+																	Location: San Ramon, CHVPKC, 2195A
+																	</li>
+																	<li >
+																	Evaluator: Ben Archibald
+																	</li>
+																</ul>
+													
+														</div>
+													<span class="list-info-txt">Perform Corrective Action <br/>
+													Incident: Slip in Parking Lot</span>
+													
+												</span>
+											</div>
+										</td>
+										<td >
+											01-Jan-2014: <span class="red-txt"> Overdue </span>
+										</td>
+										<td class="first-column">
+											<div class="">
+												<a href="" class="edit-icon fleft margin-top-5"></a>
+												<span class="icon-seperator fleft margin-left-10">  &nbsp;  </span>
+												<a href="" class="view-info-icon fleft margin-top-5 margin-left-10"></a>
+												
+											</div>
+										</td>
+										<td class="last-coloumn">
+											<div class="drop-div" style="width:150px;">
+												Mark as Completed
+												<span class="drop-div-arrow" style="background-position: 0px 0px;"></span>
+												
+												<ul class="select-attrib-list" style="display:none;">
+													<li>Mark as Completed</li>
+													<li>Submit for Review</li>
+													<li>Schedule</li>
+													<li>Perform Intake</li>
+
+												</ul>
+											</div>
+										</td>
+								
+									</tr>
+										<tr>
+											<td class="first-coloumn">
+												<span>01</span><br/>
+												<span>Low Risk</span>
+											</td>
+											<td style=" vertical-align: middle;" >
+												<div style="position:relative;">
+												<span class="list-info">
+														<div class="list-info-wrapper" style="display:none;">
+															<span class="wrapper-arrow"></span>
+																<ul>
+																	<li class="padding-bottom-5 clearfix">
+																	<span class="fleft" style="max-width:350px;">Reason for Assessment: The reason for the Assessment goes here it may take multiple line</span>
+																	</li>
+																	<li class="padding-bottom-5">
+																	Assigned on: 01-Jan-2014
+																	</li>
+																	<li class="padding-bottom-5">
+																	Assigned By: Ben Archibald
+																	</li>
+																	<li class="padding-bottom-5">
+																	<a href="#" class="blue-txt underline">View Notes (5)</a>
+																	</li>
+																</ul>
+													
+														</div>
+													<span class="list-info-txt">Task Instance Name<br/>
+													Job: Cart Picking</span>
+													
+												</span>
+												</div>
+										</td>
+											<td >
+												02-Jan-2014
+											</td>
+											<td class="first-column">
+												<div class="">
+													<a href="" class="edit-icon fleft margin-top-5"></a>
+													<span class="icon-seperator fleft margin-left-10">  &nbsp;  </span>
+													<a href="" class="view-info-icon fleft margin-top-5 margin-left-10"></a>
+												</div>
+											</td>
+											<td class="last-coloumn">
+												<div class="drop-div" style="width:150px;">
+												Mark as Completed
+												<span class="drop-div-arrow" style="background-position: 0px 0px;"></span>
+												
+												<ul class="select-attrib-list" style="display:none;">
+													<li>Submit for Review</li>
+													<li>Mark as Completed</li>
+													<li>Schedule</li>
+													<li>Perform Intake</li>
+
+												</ul>
+											</div>
+											</td>
+								
+										</tr>
+										
+										<tr>
+											<td class="first-coloumn">
+												<span>01</span><br/>
+												<span>Low Risk</span>
+											</td>
+												<td style=" vertical-align: middle;" >
+												<div style="position:relative;">
+												<span class="list-info">
+														<div class="list-info-wrapper" style="display:none;">
+															<span class="wrapper-arrow"></span>
+																<ul>
+																	<li class="padding-bottom-5 clearfix">
+																	<span class="fleft" style="max-width:350px;">Reason for Assessment: The reason for the Assessment goes here it may take multiple line</span>
+																	</li>
+																	<li class="padding-bottom-5">
+																	Assigned on: 01-Jan-2014
+																	</li>
+																	<li class="padding-bottom-5">
+																	Assigned By: Ben Archibald
+																	</li>
+																	<li class="padding-bottom-5">
+																	<a href="#" class="blue-txt underline">View Notes (5)</a>
+																	</li>
+																</ul>
+													
+														</div>
+													<span class="list-info-txt">Task Type Name<br/>
+													Job: Cart Picking</span>
+													
+												</span>
+												</div>
+										</td>
+											<td >
+												02-Jan-2014
+											</td>
+											<td class="first-column">
+												<div class="">
+													<a href="" class="edit-icon fleft margin-top-5"></a>
+													<span class="icon-seperator fleft margin-left-10">  &nbsp;  </span>
+													<a href="" class="view-info-icon fleft margin-top-5 margin-left-10"></a>
+												</div>
+											</td>
+											<td class="last-coloumn">
+												<div class="drop-div" style="width:150px;">
+												Submit for Review
+												<span class="drop-div-arrow" style="background-position: 0px 0px;"></span>
+												
+												<ul class="select-attrib-list" style="display:none;">
+													<li>Submit for Review</li>
+													<li>Mark as Completed</li>
+													<li>Schedule</li>
+													<li>Perform Intake</li>
+
+												</ul>
+											</div>
+											</td>
+								
+										</tr>
+										
+										<tr>
+											<td class="first-coloumn">
+												<span>01</span><br/>
+												<span>Low Risk</span>
+											</td>
+										<td style=" vertical-align: middle;" >
+												<div style="position:relative;">
+												<span class="list-info">
+														<div class="list-info-wrapper" style="display:none;">
+															<span class="wrapper-arrow"></span>
+																<ul>
+																	<li class="padding-bottom-5">
+																	Assigned on: 4-Aug-2014
+																	</li>
+																	<li class="padding-bottom-5">
+																	Assigned By: Ben Archibald
+																	</li>
+																	<li >
+																		<a href="#" class="blue-txt underline">View Notes (3)</a>
+																	</li>
+																</ul>
+													
+														</div>
+													<span class="list-info-txt">Task Instance Name<br/>
+													Job: Cart Picking</span>
+													
+												</span>
+												</div>
+										</td>
+											<td >
+												03-Jan-2014
+											</td>
+											<td class="first-column">
+												<div class="">
+													<a href="" class="edit-icon fleft margin-top-5"></a>
+													<span class="icon-seperator fleft margin-left-10">  &nbsp;  </span>
+													<a href="" class="view-info-icon fleft margin-top-5 margin-left-10"></a>
+												</div>
+											</td>
+											<td class="last-coloumn">
+												<div class="drop-div" style="width:150px;">
+												Schedule
+												<span class="drop-div-arrow" style="background-position: 0px 0px;"></span>
+												
+												<ul class="select-attrib-list" style="display:none;">
+													<li>Submit for Review</li>
+													<li>Mark as Completed</li>
+													<li>Schedule</li>
+													<li>Perform Intake</li>
+
+												</ul>
+											</div>
+											</td>
+								
+										</tr>
+										<tr>
+											<td class="first-coloumn">
+												<span>03</span><br/>
+												<span>Medium Risk</span>
+											</td>
+											<td style=" vertical-align: middle;" >
+												<div style="position:relative;">
+												<span class="list-info">
+														<div class="list-info-wrapper" style="display:none;">
+															<span class="wrapper-arrow"></span>
+																<ul>
+																		<li class="padding-bottom-5">
+																		Phone: +55 4934 29349
+																		</li>
+																		<li class="padding-bottom-5">
+																		Schedule Date: 01-Jan-2014 08:00
+																		</li>
+																		<li class="padding-bottom-5">
+																		Target Date: 05-Jan-2014
+																		</li>
+																		<li class="padding-bottom-5">
+																		Location: San Ramon, CHVPKC, 2195A
+																		</li>
+																		<li >
+																		Evaluator: Ben Archibald
+																		</li>
+																</ul>
+													
+														</div>
+													<span class="list-info-txt">Brian DeGonia(B0123456789)<br/>
+													Full Worksration Evaluation</span>
+													
+												</span>
+												</div>
+										</td>
+											<td >
+												04-Jan-2014
+											</td>
+											<td class="first-column">
+												<div class="">
+													<a href="" class="edit-icon fleft margin-top-5"></a>
+													<span class="icon-seperator fleft margin-left-10">  &nbsp;  </span>
+													<a href="" class="view-info-icon fleft margin-top-5 margin-left-10"></a>
+												</div>
+											</td>
+											<td class="last-coloumn">
+												<div class="drop-div" style="width:150px;">
+												Perform Intake
+												<span class="drop-div-arrow" style="background-position: 0px 0px;"></span>
+												
+												<ul class="select-attrib-list" style="display:none;">
+													<li>Submit for Review</li>
+													<li>Mark as Completed</li>
+													<li>Schedule</li>
+													<li>Perform Intake</li>
+
+												</ul>
+											</div>
+											</td>
+								
+										</tr>
+											
+							</tbody></table>
+							<!--page-content-body section ends -->
+
+							<div class="padding-20 grey-txt" align="center" style="display:none;">No Items in the ToDo List</div>
+						</div>
+					
+					
+				
+				</div><!-- page-content ends -->
+				
+				<div class="grey-bar clearfix fleft" style="width:898px;">
+					<span class="font-14 bold">Important Metrics</span>
+				</div>
+				<div class="graph-container clearfix" >
+					<div class="bar-chart-container fleft" >
+						<div class="padding-10 bold" align="center">Types of Hazards</div>
+						<div class="chart-container">
+							<img src="images/bar-chart.png" width="561" height="265">
+						</div>
+					
+					</div>
+					<div class="pie-chart-container fleft" >
+						<div class="padding-10 bold" align="center">Hazards Risk Distribution</div>
+						<div class="chart-container" align="center">
+							<img src="images/pie-chart.png" width="305" height="265" style="">
+						</div>
+						<div style="padding-left:55px;" class="clearfix">
+						<div class="graph-info padding-10 clearfix margin-left-20">
+							<div class="fleft margin-right-20"><span class="graph-color-indicator red-indicator fleft"></span><span class="underline margin-left-5 fleft">High</span></div>
+							<div class="fleft margin-right-20"><span class="graph-color-indicator orange-indicator fleft"></span><span class="underline margin-left-5 fleft">Moderate</span></div>
+							<div class="fleft"><span class="graph-color-indicator green-indicator fleft"></span><span class="underline margin-left-5 fleft">Low</span></div>
+						
+						</div>
+						<div class="fleft padding-10" style="width:42%;">
+							<span class="font-14 bold margin-bottom-10 clearfix">Hazards</span>
+							<ul>
+								<li class="padding-bottom-5 clearfix"><a href="#" class="underline">Total Hazards: 4</a></li>
+								<li class="padding-bottom-5 clearfix"><a href="#" class="underline">Not Controlled:</a><span class="risk-level-icon-big icon-red "><span class="risk-txt margin-top-5 underline">4</span></span></li>
+							
+							</ul>
+						
+						</div>
+						<div class="fleft padding-10" style="width:42%;">
+							<span class="font-14 bold margin-bottom-10 clearfix">Controls</span>
+							<ul>
+								<li class="padding-bottom-5 clearfix"><a href="#" class="underline">Total Controls: 13</a></li>
+								<li class="padding-bottom-5 clearfix"><a href="#" class="underline">Assigned: 3</a></li>
+								<li class="padding-bottom-5 clearfix"><a href="#" class="underline">Established: 8</a></li>
+								<li class="padding-bottom-5 clearfix"><a href="#" class="underline">Proposed:</a><span class="risk-level-icon-big icon-green "><span class="risk-txt margin-top-5 underline">2</span></span></li>
+							
+							</ul>
+						
+						</div>
+						</div>
+					</div>
+				
+				
+				</div>
+				
+				</div><!-- search ends -->
+
+			</div><!-- scrollable-contnt ends -->
+			
+		</div><!-- content-section ends -->
+		
+	</div><!-- content-wrapper ends -->
+	
+</div><!-- content-wrapper-fixed ends -->
+
+<!-- content ends -->
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<link rel="stylesheet" href="css/global.css" media="screen"/>
+<link rel="stylesheet" href="css/dropdown.css" media="screen"/>
+<script type="text/javascript" src="js/jquery-1.8.0.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script src="js/uncompressed.jquery.dd.js"></script>
+<script type="text/javascript" src="js/progressbar.js"></script>
+<link rel="stylesheet" type="text/css" href="progressbar.css">
+<link rel="stylesheet" type="text/css" href="skins/tiny-green/progressbar.css">
+<style>
+ @media only screen and (max-width: 930px) {
+	#hdr-wrap {position:absolute; width:940px;}
+	#box-top {position:absolute; width:900px; top:0px;}
+	#left-panel {position:absolute; width:220px; top:0px;}
+	.heading, .box-status {position:absolute; width:685px; top:0px;}
+	.box-status  {top:39px;}
+	#list-panel {margin-top:-5px;}
+	#scrollable-contnt {border-bottom:0px;}
+	#footer-wrapper-fixed  {bottom:-115px;}
+}
+</style>
+</head>
+<body>
+<div id="hdr-wrap">
+	<div id="hdr">
+		<!-- Header top link Section Begins-->
+		<div id="hdr-toplink">
+			<ul>
+				<li class="logo"><a href="#"></a></li>
+				<li class="fleft active">
+				<a class="fleft" href="page-2.html">JHA</a>
+				</li>
+				<!-- product drop down starts -->
+				<li class="product-dropdown-list fleft">
+				<div class="dropdown-wrapper">
+					<a href="javascript:void(0);" class="site_switcher_button ">More</a>
+					<ul class="product-dropdown ">
+						<li>
+						<a href="#">Incident Management System</a>
+						</li>
+						<li>
+						<a href="#">Training &amp; Assessment</a>
+						</li>
+						<li>
+						<a href="#">Administration</a>
+						</li>
+						<li>
+						<a href="#">Cartevia</a>
+						</li>
+						<li>
+						<a href="#">Job Hazard Assessment</a>
+						</li>
+						<li>
+						<a href="#">Cartevia</a>
+						</li>
+					</ul>
+				</div>
+				</li>
+				<!-- product drop down ends -->
+			</ul>
+			<div class="status">
+				<span class="welcome">Welcome,David Issa</span> &nbsp; | &nbsp; <a href="#">LOG OUT</a>
+			</div>
+		</div>
+		<!--Header top link Section Ends -->
+		<!-- Header tab navigation Section Begins -->
+		<div id="hdr-tab-navigation">
+			<ul>
+				<li><a href="#">Dashboard</a></li>
+				<li class="active"><a href="#">Jobs/Tasks</a></li>
+				<li><a href="#">Hazards Queue</a></li>
+				<li><a href="#">Reports</a></li>
+				<li><a href="#">Help</a></li>
+			</ul>
+			<div class="link-btn">
+				<a href="#" class="new">+ New</a>
+			</div>
+			<div style="float: right;" id="shareLink-button-div" class="share-link-btn margin-right-5">
+					<span class="box"> <a href="javascript:void(0);"><span style="left:7px;position:relative;">Link</span></a> </span>
+				</div>
+				<div style="display: block;" id="print-button-div" class="link-btn">
+					<span class="box"> <a  href="javascript:void(0);">Print
+					</a> </span>
+				</div>
+				<div style="display: block;" id="archivejobortask-button-div" class="link-btn">
+					<span class="box"> <a  href="javascript:void(0);" style="display: inline;">Archive </a> </span>
+				</div>
+		</div>
+		<!-- Header tab navigation Section Ends -->
+	</div>
+</div>
+<!-- Content Wrapper Section Begins -->
+<div id="content-wrapper-fixed">
+	<div id="content-wrapper">
+		<!-- Content Top Section Begins -->
+		<div style="height:34px;" class="fleft box-top-small">
+			<div class="fleft margin-top-3 ">
+				<div class="fleft">
+					<h1 style="" class="fleft margin-top-3 bold">
+					Lighting Tester - NV </h1>
+					<br>
+					<span class="fleft font-12 margin-top-5">
+					Last Updated: 01-Jan-2014 &nbsp; &nbsp;By: Ben Archibald </span>
+				</div>
+			</div>
+			<div class="logo1 fright" style="max-height:35px; margin-top:-4px;">
+				<img border="0" src="images/RI__general__36CF29B9_19B9_EADC_D723EDA9EA12AC2A.jpg">
+			</div>
+		</div>
+		<!-- Content Top Section  Ends -->
+		<!-- Content Section Begins -->
+		<div id="content-section" class="content-section-new">
+			<!-- Left Panel Section Begins -->
+			<div id="left-panel" class="left-panel-new">
+				
+					<ul>
+					<li class="selected">
+						<a href="#"><span >Summary</span></a>
+					</li>
+					<li >
+						<a href="#"><span >Tasks</span></a>
+					</li>
+					<li >
+						<a href="#"><span >Hazards</span></a>
+					</li>
+					<li >
+						<a href="#"><span >Controls</span></a>
+					</li>
+					<li >
+						<a href="#"><span >History</span></a>
+					</li>
+					
+				</ul>
+				<div class="clearall">
+				</div>
+				<div class="search-form">
+					<input type="text" class="search-txt" value="Search for Job/Task"/><input type="button" class="search-btn"/>
+					<a href="#" class="fright">Advanced Search </a>
+					<div class="clearall">
+					</div>
+				</div>
+			</div>
+			<!-- Left Panel Section Ends -->
+			<!-- Scrollable content Section Begins -->
+			<div id="scrollable-contnt">
+				<div class="heading heading-new">
+					
+					<span class="fleft font-18 bold" style="margin-top:4px;">Summary</span>
+					<a href="#" class="fright txt-link-disable margin-left-10" title="Delete">Save</a>
+					<a href="#" class="fright txt-link-disable" title="Delete">Cancel</a>
+					
+					<div id="process_buttons" class="fright">
+						<a id="archivejobortask-button" style="border-right: medium none;" class="dark-grey fright padding-right-10 padding-left-10 close-task" href="javascript:void(0);">
+							Archive Job
+						</a>
+						<a class="email dark-grey fright padding-right-10 padding-left-10" href="javascript:void(0);">
+							Email
+						</a>
+						<a class="notes dark-grey fright padding-right-10 padding-left-10" href="javascript:void(0);">
+							<span class="fleft notes-count">0</span> 
+							Notes
+						</a>
+					</div>
+					
+				</div>
+				<div class="box-status box-status-new">
+					<span style="" class="fleft margin-top-5 margin-right-10 font-16">Assessment Details</span> <a style="margin-top:-2px;" class="fright green-btn-noshadow bold add-hazard" href="#">+ Add Assessment</a>
+				</div>
+				<div class="container">
+					<div class="content innercontnt ">
+						
+						<div>
+							<table width="100%" cellspacing="0" cellpadding="10" border="0" class="table-info">
+							<thead>
+							<tr>
+								<th width="5%" align="left"></th>
+								<th width="30%" align="left">
+									<span class="">Assigned to</span>
+								</th>
+								<th width="25%" align="left">
+									<span class="">Reason for Assessment</span>
+								</th>
+								<th width="15%" align="left">
+									<span class="">Due Date</span>
+								</th>
+								<th width="25%" align="left">
+									<span class="">Action</span>
+								</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr class="border-bottom" style="display:none;">
+								<td align="center" class="border-right padding-right-20">
+										<a href="javascript:void(0);" class=" delete-attr"></a>
+								</td>
+								<td>
+									<a href="#" class="underline">Ben Archibald</a><br/><span class="margin-top-5 display-inline">Status: Open-Work In-Progress</span>
+								</td>
+								<td>
+									Hazard Notification
+								</td>
+								<td>
+									01-Jan-2014
+								</td>
+								<td>
+									<div style="width:125px;" class="drop-div">
+												Ben's next step
+												<span style="background-position: 0px 0px;" class="drop-div-arrow"></span>
+												
+												<ul style="display:none;" class="select-attrib-list">
+													<li>Complete</li>
+													<li>Approve</li>
+													<li>Schedule</li>
+													
+
+												</ul>
+											</div>
+								</td>
+								
+							</tr>
+							<tr>
+								<td colspan="5"><div class="grey-txt" align="center">No Open Assessments Lorem ipsum Delorum etu.</div></td>
+							
+							</tr>
+						
+							</tbody>
+							</table>
+							
+						</div>
+						<!-- Middle Section Ends -->
+						<div class="content1 clearfix padding-bottom-20 margin-right-20 margin-left-20 padding-top-20 ">
+						<div class="leftcontent padding-right-20 fleft" style="border-right:1px solid #c8c8c8;width:313px;">
+							<div>
+								<span class="margin-bottom-6 bold display font-14">Job Name:</span>
+								<input type="text" style="width:291px;" value="Lightning Tester">
+							</div>
+							<div class="clearfix margin-top-20">
+								<span class="margin-bottom-6 bold display font-14">Job Code:</span>
+								<input type="text" style="width:291px;" value="Job Code">
+							</div>
+							<div class="margin-top-20">
+								<span class="margin-bottom-6 bold display font-14">Description:</span>
+								<textarea style="width:291px; max-width:291px; height:140px;" class="txtarea"></textarea>
+							</div>
+							<div class="margin-top-20">
+								<span class="margin-bottom-6 bold display font-14">Who will this job apply to?</span>
+								<textarea style="width:291px; max-width:291px; height:60px;" class="txtarea"></textarea>
+							</div>
+						</div>
+						<div class="rightcontent fleft" style="border-left:1px solid #c8c8c8; margin-left:-1px;width: 344px;">
+							<div class="pie-chart-container fleft" style="width:auto;">
+								<div align="center" class="padding-left-10 padding-right-10 padding-bottom-10 bold">Hazards Risk Distribution</div>
+								<div align="center" class="chart-container">
+									<img width="305" height="265" style="" src="images/pie-chart.png">
+								</div>
+								<div class="clearfix" style="padding-left:40px;">
+									<div class="graph-info padding-10 clearfix margin-left-20">
+										<div class="fleft margin-right-20"><span class="graph-color-indicator red-indicator fleft"></span><span class="underline margin-left-5 fleft">High</span></div>
+										<div class="fleft margin-right-20"><span class="graph-color-indicator orange-indicator fleft"></span><span class="underline margin-left-5 fleft">Moderate</span></div>
+										<div class="fleft"><span class="graph-color-indicator green-indicator fleft"></span><span class="underline margin-left-5 fleft">Low</span></div>
+									
+									</div>
+									<div style="width:42%;" class="fleft padding-10">
+										<span class="font-14 bold margin-bottom-10 clearfix">Hazards</span>
+										<ul>
+											<li class="padding-bottom-5 clearfix"><a class="underline" href="#">Total Hazards: 4</a></li>
+											<li class="padding-bottom-5 clearfix"><a class="underline" href="#">Not Controlled:</a><span class="risk-level-icon-big icon-red "><span class="risk-txt margin-top-5 underline">4</span></span></li>
+										
+										</ul>
+									
+									</div>
+									<div style="width:42%;" class="fleft padding-10">
+										<span class="font-14 bold margin-bottom-10 clearfix">Controls</span>
+										<ul>
+											<li class="padding-bottom-5 clearfix"><a class="underline" href="#">Total Controls: 13</a></li>
+											<li class="padding-bottom-5 clearfix"><a class="underline" href="#">Assigned: 3</a></li>
+											<li class="padding-bottom-5 clearfix"><a class="underline" href="#">Established: 8</a></li>
+											<li class="padding-bottom-5 clearfix"><a class="underline" href="#">Proposed:</a><span class="risk-level-icon-big icon-green "><span class="risk-txt margin-top-5 underline">2</span></span></li>
+										
+										</ul>
+									
+									</div>
+								</div>
+							
+							</div>
+						</div>
+						</div>
+						<div class=" padding-right-20 padding-bottom-10 padding-top-10 border-bottom clearfix collapsible-cntnt-header-3" style="border-top:1px solid #c8c8c8;">
+							<span style="margin-top:7px;" class="bold display-inline font-16">Associated Attributes</span>
+							<a href="#" class="fright green-btn-noshadow bold add-controls">+ Add/Edit Attributes </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Scrollable content Section Ends -->
+			<div class="clearall">
+			</div>
+		</div>
+		<!-- Content Section Ends -->
+	</div>
+	<!-- Footer Section Begins  --->
+	<div id="footer-wrapper-fixed" class="footer-new">
+		<div id="footer">
+			<span class="copyright">&copy; Copyright 2012. Remedy Interactive &nbsp; | &nbsp; <a href="#">PRIVACY POLICY </a></span>
+		</div>
+	</div>
+	<!-- Footer Section Ends--->
+</div>
+<!-- Content Wrapper Section  Ends -->
+<script type="text/javascript">
+$(document).ready(function() {
+try {
+		oHandler = $("#type").msDropDown({mainCSS:'dd2'}).data("dd");
+		oHandler = $("#status").msDropDown({mainCSS:'dd2'}).data("dd");
+		oHandler = $("#frequency").msDropDown({mainCSS:'dd2'}).data("dd");
+		oHandler = $("#probability").msDropDown({mainCSS:'dd2'}).data("dd");
+		oHandler = $("#severity").msDropDown({mainCSS:'dd2'}).data("dd");
+		//alert($.msDropDown.version);
+		//$.msDropDown.create("body select");
+		$("#ver").html($.msDropDown.version);
+		} catch(e) {
+			alert("Error: "+e.message);
+		}
+		progressBar(35, $('#progressBar'));
+})
+</script>
+<!-- archive job popup starts -->
+
+<div style="width: 459px; left: 65%; top: 200px;display:none;" class="modal-white-content " id="archive">
+		<div class="modal-popup-header clearfix">
+			<h2 style="margin:0px;" class="fleft white-txt inline-block bold font-18">Archive Job</h2>
+			<a href="javascript:void(0)" class="modal-popup-close"></a>
+		</div>
+		
+		<div class="popup-body">
+			<p style="margin:0px;" class="padding-10 font-14">
+				Are you sure you want to archive this job?
+			</p>
+		</div>
+		<div align="center" class="popup-footer clearfix">
+			<a style="width:28%;" class="pop-up-btn close-btn blue-txt bold font-14 fleft " href="#">Cancel</a>
+			<a style="width:28%;" class="pop-up-btn-green close-btn bold font-14 fright delete-hazard" href="#">Archive Job</a>
+		</div>
+	</div>
+<!-- archive job popup ends -->
+<div style="display:none;" class="black-overlay">
+</div>
+</body>
+
+</html>

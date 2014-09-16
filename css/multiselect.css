@@ -1,0 +1,139 @@
+.ms-choice {
+    background-color: transparent;
+    border: medium none;
+   /*  border-radius: 4px 5px 4px 4px; */
+    color: #444444;
+    cursor: pointer;
+    display: block;
+    height: 32px;
+    line-height: 31px;
+    overflow: hidden;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    white-space: nowrap;
+    width: 100%;
+}
+.ms-parent {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.form-control {
+    background-color: #FFFFFF;
+    background-image: none;
+    border: 1px solid #C8C8C8;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555555;
+    display: inline-block;
+    font-size: 12px;
+    height: 32px;
+    line-height: 1.42857;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    vertical-align: middle;
+    width: 300px;
+}
+
+.ms-choice > span.placeholder {
+    color: #404040 !important;
+}
+.ms-choice > span {
+    display: block;
+    left: 0;
+    overflow: hidden;
+    padding-left: 8px;
+    padding-right: 11px;
+    position: absolute;
+    right: 33px;
+    text-overflow: ellipsis;
+    top: 0;
+    white-space: nowrap;
+}
+.ms-choice > div {
+    background: url("../images/dropdown-sort_arrow.png") no-repeat scroll center center transparent;
+    border-left: 1px solid #C8C8C8;
+    height: 32px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 27px;
+}
+.ms-drop.bottom {
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.25);
+    top: 100%;
+}
+.ms-drop {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #C8C8C8;
+    border-radius: 0 0 4px 4px;
+    color: #000000;
+    display: none;
+    margin-top: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 99.4%;
+    z-index: 1000;
+}
+.ms-drop ul {
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+}
+.ms-drop ul > li {
+    background-image: none;
+    border-bottom: 1px solid #C8C8C8;
+    display: list-item;
+    float: left;
+    list-style: none outside none;
+    position: static;
+    width: 100%;
+}
+.ms-drop ul > li label {
+    display: block;
+    font-weight: normal;
+	color: #404040;
+    float: left;
+    margin-bottom: 0;
+    padding: 10px;
+    width: 93%;
+}
+.ms-drop ul > li:hover{
+background:#3497ca;
+
+}
+.ms-drop ul > li:hover  label{
+color:#fff !important;
+}
+.checkbox, .chk-normal, .chk-checked, .chk-intermediate {
+    background: url("../images/checkbox.png") no-repeat scroll -2px -4px transparent;
+    clear: left;
+    display: block;
+    float: left;
+    height: 15px;
+    margin-top: 3px;
+    position: relative;
+    width: 15px;
+}
+input.styled {
+    cursor: pointer;
+    float: left;
+    left: -14px;
+    margin: 0;
+    opacity: 0;
+    position: relative;
+    top: 3px;
+    z-index: 20;
+}
+.option-label {
+    float: left;
+    width: 83%;
+}
+.chk-checked {
+    background: url("../images/checkbox.png") no-repeat scroll -2px -28px transparent;
+}
+.font-bold{
+font-weight:bold;
+}
